@@ -51,7 +51,7 @@ func CreateRedisData() string {
 		panic(err)
 	}
 
-	svcName := "foo-" + id
+	svcName := "exp-" + id
 	err = rdb.Set(ctx, id, svcName, 0).Err()
 	if err != nil {
 		panic(err)
