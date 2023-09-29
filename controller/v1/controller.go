@@ -8,14 +8,14 @@ import (
 	"github.com/Seunghoon-Oh/cloud-ml-experiments-manager/service"
 )
 
-func GetFoos(c *gin.Context) {
-	data := service.GetFoos()
+func GetExps(c *gin.Context) {
+	data := service.GetExps()
 	c.JSON(http.StatusOK, gin.H{
 		"data": data,
 	})
 }
 
-func CreateFoo(c *gin.Context) {
-	data := service.CreateFoo()
+func CreateExp(c *gin.Context) {
+	data := service.CreateExp()
 	c.String(http.StatusOK, data)
 }

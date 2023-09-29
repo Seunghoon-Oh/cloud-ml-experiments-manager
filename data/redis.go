@@ -12,7 +12,7 @@ var rdb *redis.Client
 
 func SetupRedisClient() {
 	rdb = redis.NewClient(&redis.Options{
-		Addr:     "redis-master.cloud-ml-foo.svc.cluster.local:6379",
+		Addr:     "redis-master.cloud-ml-experiments.svc.cluster.local:6379",
 		Password: "7XgOkaoVPb",
 		DB:       0,
 	})
